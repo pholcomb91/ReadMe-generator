@@ -1,10 +1,32 @@
-// TODO: Include packages needed for this application
+// Dependencies
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const generateReadme= ({motivation, why, problem, learn, standOut}) => ``
+const generateReadme= ({ name, motivation, why, problem, learn, standOut, help, github, deployed }) => 
+//Build out
+`## ${name}
+
+My motivation for building this is ${motivation}
+
+I built this ${why}
+
+This solves ${problem}
+
+This stands out because of ${standOut}
+
+## Experience
+
+In building this application I learned ${learn}
+
+---Don't Forget to mention whether you got help on this or not and add a screenshot---
+
+## Requisite Links
+
+${github}
+${deployed}
+`
 ;
-// TODO: Create an array of questions for user input
+// Necessary questions. 
 const questions = [
         "What is your motivation?"
     , 
@@ -47,14 +69,29 @@ inquirer
             type: 'input',
             message: questions[4],
             name: 'standOut'
-        }
+        },
+        {
+            type: 'input',
+            message: 'What is the Github Repository link?',
+            name: 'github',
+        },
+        {
+            type: 'input',
+            message: 'What is the deployed application link?',
+            name: 'deployed',
+        },
+        
     ])
+    //Promise
     .then((responses) => {
         const readmePageContent = generateReadme(responses);
 
-        // TODO: Create a function to write README file
+        // Now write the file. 
         fs.writeFile('README.md', readmePageContent, (err) =>
         err ? console.error(err) : console.log('Success, you have written a professional Readme.md')
         )
+    
     });
+
+    
     
