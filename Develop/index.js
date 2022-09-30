@@ -2,9 +2,18 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const generateReadme= ({ name, motivation, why, problem, learn, standOut, help, github, deployed }) => 
+const generateReadme= ({ name, motivation, why, problem, learn, standOut, installation, help, github, deployed }) => 
 //Build out
-`## ${name}
+`# ${name}
+
+#### Table of Contents
+    *List item
+    [Description]()
+    [Installation Instructions]()
+    [Experience]()
+    [Links]()
+
+## Description
 
 My motivation for building this is ${motivation}
 
@@ -13,6 +22,10 @@ I built this ${why}
 This solves ${problem}
 
 This stands out because of ${standOut}
+
+## Installation Instructions
+
+In order to run this application ${installation}
 
 ## Experience
 
@@ -33,6 +46,8 @@ const questions = [
         "For what purpose did you build this?"
     ,
         "What problem does it solve?"
+    ,
+        "What must be done in order to run application?"
     , 
         "What did you learn?"
     , 
@@ -62,13 +77,18 @@ inquirer
         },
         {
             type: 'input',
-            message: questions[3],
+            message: questions[4],
             name: 'learn'
         },
         {
             type: 'input',
-            message: questions[4],
+            message: questions[5],
             name: 'standOut'
+        },
+        {
+            type: 'input',
+            Message: questions[3],
+            name: 'installation'
         },
         {
             type: 'input',

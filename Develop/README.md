@@ -1,18 +1,34 @@
-## Julian
+## ${name}
 
-My motivation for building this is Grace
+#### Table of Contents
+    *List item
+    [Description]()
+    [Installation Instructions]()
+    [Experience]()
+    [Links]()
 
-I built this to take over the world
+## Description
 
-This solves the problem of good
+My motivation for building this is ${motivation}
 
-This stands out because of my team
+I built this ${why}
+
+This solves ${problem}
+
+This stands out because of ${standOut}
+
+## Installation Instructions
+
+In order to run this application ${installation}
 
 ## Experience
 
-In building this application how to fix dependecies
-I recieved assistance from: 
+In building this application I learned ${learn}
+
+---Don't Forget to mention whether you got help on this or not and add a screenshot---
+
 ## Requisite Links
 
-github.com
-Julian.com
+${github}
+${deployed}
+`
