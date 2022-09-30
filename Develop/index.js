@@ -2,16 +2,16 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const generateReadme= ({ name, motivation, why, problem, learn, standOut, installation, help, github, deployed }) => 
+const generateReadme= ({ name, motivation, why, problem, learn, standOut, installation, help, github, email }) => 
 //Build out
 `# ${name}
 
 #### Table of Contents
     *List item
-    [Description]()
-    [Installation Instructions]()
-    [Experience]()
-    [Links]()
+    [Description](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#description)
+    [Installation Instructions](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#installation-instructions)
+    [Experience](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#experience)
+    [Links](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#links)
 
 ## Description
 
@@ -97,8 +97,8 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What is the deployed application link?',
-            name: 'deployed',
+            message: 'What is your email?',
+            name: 'email',
         },
         
     ])
