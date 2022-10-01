@@ -7,10 +7,10 @@ const generateReadme= ({ name, motivation, why, problem, learn, standOut, instal
 `# ${name}
 
 #### Table of Contents
-[Description](#description)
-[Installation Instructions](#installation-instructions)
-[Experience](#experience)
-[Questions](#questions)
+[Description](#description)  
+[Installation Instructions](#installation-instructions)  
+[Experience](#experience)  
+[Questions](#questions)  
 
 ## Description
 
@@ -30,7 +30,7 @@ In order to run this application ${installation}
 
 In building this application I learned ${learn}
 
-${assist==='Yes' ? "I received assistance from:" : "No assistance was needed."} github.com/${assistName}
+${assist===true ? "I received assistance from:" : "No assistance was needed."} github.com/${assistName}
 
 ## Lincense
 
@@ -38,7 +38,7 @@ ${license}
 
 ## Questions
 
-Find my work on [GitHub](github.com/${github})
+Find my work on github.com/${github}
 Or reach me at: ${email}
 `
 ;
