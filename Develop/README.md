@@ -2,7 +2,7 @@
 
 #### Table of Contents
     *List item
-    [Description](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#description)
+    [Description](./ReadMe.md#description)
     [Installation Instructions](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#installation-instructions)
     [Experience](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#experience)
     [Links](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#links)
