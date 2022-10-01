@@ -24,13 +24,13 @@ In order to run this application test
 
 In building this application I learned test
 
-I received assistance from: github.com/juliandanciu
+No assistance was needed. [](https://github.com/)
 
 ## Lincense
 
-[MIT](https://opensource.org/licenses/MIT0)
+[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Questions
 
-Find my work on github.com/pholcomb91
+Find my work on [Github](https://github.com/pholcomb91)
 Or reach me at: pholcomb91@gmail.com

@@ -30,7 +30,7 @@ In order to run this application ${installation}
 
 In building this application I learned ${learn}
 
-${assist===true ? "I received assistance from:" : "No assistance was needed."} github.com/${assistName}
+${assist===true ? "I received assistance from:" : "No assistance was needed."} [${assistName}](https://github.com/${assistName})
 
 ## Lincense
 
@@ -38,7 +38,7 @@ ${license}
 
 ## Questions
 
-Find my work on github.com/${github}
+Find my work on [Github](https://github.com/${github})
 Or reach me at: ${email}
 `
 ;
@@ -107,7 +107,7 @@ inquirer
             type: 'list',
             message: 'What license would you like to use?',
             name: 'license',
-            choices: ['[MIT](https://opensource.org/licenses/MIT0)', '[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)', '[ISC](https://www.isc.org/licenses/)']
+            choices: ['[MIT](https://opensource.org/licenses/MIT)', '[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)', '[ISC](https://www.isc.org/licenses/)']
         },
         {
             type: 'input',
