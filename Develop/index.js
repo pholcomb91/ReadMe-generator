@@ -2,16 +2,15 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const generateReadme= ({ name, motivation, why, problem, learn, standOut, installation, help, github, email }) => 
+const generateReadme= ({ name, motivation, why, problem, learn, standOut, installation, assist, assistName, license, github, email }) => 
 //Build out
 `# ${name}
 
 #### Table of Contents
-    *List item
-    [Description](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#description)
-    [Installation Instructions](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#installation-instructions)
-    [Experience](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#experience)
-    [Links](https://github.com/pholcomb91/ReadMe-generator/tree/main/Develope#links)
+[Description](#description)
+[Installation Instructions](#installation-instructions)
+[Experience](#experience)
+[Questions](#questions)
 
 ## Description
 
@@ -31,12 +30,16 @@ In order to run this application ${installation}
 
 In building this application I learned ${learn}
 
----Don't Forget to mention whether you got help on this or not and add a screenshot---
+${assist==='Yes' ? "I received assistance from:" : "No assistance was needed."} github.com/${assistName}
 
-## Requisite Links
+## Lincense
 
-${github}
-${deployed}
+${license}
+
+## Questions
+
+Find my work on [GitHub](github.com/${github})
+Or reach me at: ${email}
 `
 ;
 // Necessary questions. 
@@ -77,8 +80,23 @@ inquirer
         },
         {
             type: 'input',
+            message: questions[3],
+            name: 'installation'
+        },
+        {
+            type: 'input',
             message: questions[4],
             name: 'learn'
+        },
+        {
+            type: 'confirm',
+            message: 'Did you receive assistance on this project?',
+            name: 'assist'
+        },
+        {
+            type: 'input',
+            message: 'If you did, what is their Github username? If not, press "\x1b[35menter\x1b[0m".',
+            name: 'assistName'
         },
         {
             type: 'input',
@@ -86,13 +104,14 @@ inquirer
             name: 'standOut'
         },
         {
-            type: 'input',
-            Message: questions[3],
-            name: 'installation'
+            type: 'list',
+            message: 'What license would you like to use?',
+            name: 'license',
+            choices: ['[MIT](https://opensource.org/licenses/MIT0)', '[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)', '[ISC](https://www.isc.org/licenses/)']
         },
         {
             type: 'input',
-            message: 'What is the Github Repository link?',
+            message: 'What is your Github username?',
             name: 'github',
         },
         {
@@ -107,7 +126,7 @@ inquirer
         const readmePageContent = generateReadme(responses);
 
         // Now write the file. 
-        fs.writeFile('README.md', readmePageContent, (err) =>
+        fs.writeFile('README-1.md', readmePageContent, (err) =>
         err ? console.error(err) : console.log('Success, you have written a professional Readme.md')
         )
     
