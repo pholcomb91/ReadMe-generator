@@ -34,7 +34,7 @@ ${assist===true ? "I received assistance from:" : "No assistance was needed."} [
 
 ## Lincense
 
-${license}
+This application is covered under: ${license} (click link for more information).s
 
 ## Questions
 
@@ -56,6 +56,7 @@ const questions = [
     , 
         "What makes this project stand out?"
     ];
+//Questions, Types, and Names
 inquirer
     .prompt([
         {
@@ -126,7 +127,7 @@ inquirer
         const readmePageContent = generateReadme(responses);
 
         // Now write the file. 
-        fs.writeFile('README-1.md', readmePageContent, (err) =>
+        fs.writeFile('README.md', readmePageContent, (err) =>
         err ? console.error(err) : console.log('Success, you have written a professional Readme.md')
         )
     
