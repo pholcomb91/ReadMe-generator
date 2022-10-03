@@ -34,7 +34,7 @@ ${assist===true ? "I received assistance from:" : "No assistance was needed."} [
 
 ## Lincense
 
-This application is covered under: ${license} (click link for more information).s
+This application is covered under: ${license} (click link for more information).
 
 ## Questions
 
