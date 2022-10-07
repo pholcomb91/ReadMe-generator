@@ -8,11 +8,11 @@
 
 ## Description
 
-My motivation for building this is Overcoming the frustration of producing a unique and professional readme.md at the end of a long project
+My motivation for building this is Overcoming the frustration of producing a unique and professional readme.
 
-I built this in order to speedup and distinguish each project.
+I built this in order to speed up and distinguish every project.
 
-This solves the problem of fatigue at the end of every project.
+This solves fatigue at the end of every build.
 
 This stands out because of its emphasis on continued learning.
 
@@ -22,13 +22,13 @@ In order to run this application install inquirer
 
 ## Experience
 
-In building this application I learned that one cannot next comlex functions inside of template literals.
+In building this application I learned that the last push is often the most important
 
 I received assistance from: [juliandanciu](https://github.com/juliandanciu)
 
 ## Lincense
 
-This application is covered under: [ISC](https://www.isc.org/licenses/) (click link for more information).
+This application is covered under: [MIT](https://opensource.org/licenses/MIT) (click link for more information).
 
 ## Questions
 
